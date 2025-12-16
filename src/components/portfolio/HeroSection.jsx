@@ -1,12 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
+import { Linkedin, Github, Mail } from 'lucide-react';
 
 export default function HeroSection() {
   const scrollToAbout = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
   };
-
+  const socialLinks = [
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/shady-mulla/', label: 'LinkedIn' },
+  { icon: Github, href: 'https://github.com/verasolo1', label: 'GitHub' },
+  { icon: Mail, href: 'mailto:shadymulla19@gmail.com', label: 'Email' },
+];
   const nameLetters = "SHADY MULLA".split('');
 
   return (
@@ -101,22 +106,45 @@ export default function HeroSection() {
             Red Team Enthusiast | Vulnerability Researcher
           </motion.p>
 
-          {/* CTA Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.6, duration: 0.6 }}
-            className="flex flex-wrap gap-4"
-          >
-            <motion.a
-              href="mailto:shadymulla19@gmail.com"
-              whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(239, 68, 68, 0.3)' }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 border border-red-500 text-red-500 font-medium rounded-sm hover:bg-red-500/10 transition-all duration-300"
-            >
-              Get In Touch
-            </motion.a>
-          </motion.div>
+{/* CTA + Social Icons */}
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 1.6, duration: 0.6 }}
+  className="flex flex-wrap items-center gap-4"
+>
+  {/* Get In Touch */}
+  <motion.a
+    href="mailto:shadymulla19@gmail.com"
+    whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(239, 68, 68, 0.3)' }}
+    whileTap={{ scale: 0.95 }}
+    className="px-8 py-3 border border-red-500 text-red-500 font-medium rounded-sm hover:bg-red-500/10 transition-all duration-300"
+  >
+    Get In Touch
+  </motion.a>
+
+  {/* Social Icons */}
+  <div className="flex gap-3">
+    {socialLinks.map((link) => (
+      <motion.a
+        key={link.label}
+        href={link.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        title={link.label}
+        whileHover={{ scale: 1.15, y: -3 }}
+        whileTap={{ scale: 0.95 }}
+        className="w-12 h-12 border border-red-500/60 rounded-sm
+                   flex items-center justify-center
+                   text-red-500 hover:bg-red-500/10
+                   transition-all duration-300"
+      >
+        <link.icon size={20} />
+      </motion.a>
+    ))}
+  </div>
+</motion.div>
+
         </div>
       </div>
 
