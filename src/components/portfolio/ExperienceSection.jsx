@@ -72,13 +72,13 @@ const certifications = [
   },
   {
     title: "CRTA - Red Team Analyst",
-    issuer: "CWL",
+    issuer: "Cyber Warfare Labs",
     year: "2024",
     image: CRTA,
   },
   {
     title: "KAUST Advanced Cybersecurity Training",
-    issuer: "SITE x NCA",
+    issuer: "SITE x National Cybersecurity Authority",
     year: "2024",
     image: KAUST,
   },
