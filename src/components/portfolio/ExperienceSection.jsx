@@ -60,41 +60,10 @@ const education = {
 
 const certifications = [
   {
-    title: "eCPPT - Professional Penetration Testing",
-    issuer: "INE",
-    year: "Aug 2025",
-    image: eCPPT,
-  },
-  {
     title: "eJPTv2 - Junior Penetration Testing",
     issuer: "INE",
     year: "Sep 2024",
     image: eJPTv2,
-  },
-  {
-    title: "CRTA - Red Team Analyst",
-    issuer: "Cyber Warfare Labs",
-    year: "Sep 2025",
-    image: CRTA,
-  },
-
-  {
-    title: "Dante ProLab",
-    issuer: "HackTheBox",
-    year: "Sep 2025",
-    image: Dante,
-  },
-  {
-    title: "Jr Penetration Tester (PT1)",
-    issuer: "TryHackMe",
-    year: "Jul 2025",
-    image: PT1,
-  },
-  {
-    title: "OSCP - Offensive Security Certified Professional",
-    issuer: "OffSec",
-    year: "..2026",
-    image: OSCP,
   },
   {
     title: "Foundation of Ethical Hacking",
@@ -108,7 +77,38 @@ const certifications = [
     year: "Apr 2025",
     image: KAUST,
   },
+  {
+    title: "Jr Penetration Tester (PT1)",
+    issuer: "TryHackMe",
+    year: "Jul 2025",
+    image: PT1,
+  },
+  {
+    title: "eCPPT - Professional Penetration Testing",
+    issuer: "INE",
+    year: "Aug 2025",
+    image: eCPPT,
+  },
+  {
+    title: "CRTA - Red Team Analyst",
+    issuer: "Cyber Warfare Labs",
+    year: "Sep 2025",
+    image: CRTA,
+  },
+  {
+    title: "Dante ProLab",
+    issuer: "HackTheBox",
+    year: "Sep 2025",
+    image: Dante,
+  },
+  {
+    title: "OSCP - Offensive Security Certified Professional",
+    issuer: "OffSec",
+    year: "..2026",
+    image: OSCP,
+  },
 ];
+
 
 
 export default function ExperienceSection() {
