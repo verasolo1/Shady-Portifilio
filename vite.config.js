@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/", // ← IMPORTANT for Netlify
+  base: "/shady-portfolio/", // 👈 MUST match repo name
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
