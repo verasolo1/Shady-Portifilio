@@ -113,15 +113,6 @@ export default function HeroSection() {
   transition={{ delay: 1.6, duration: 0.6 }}
   className="flex flex-wrap items-center gap-4"
 >
-  {/* Get In Touch */}
-  <motion.a
-    href="mailto:shadymulla19@gmail.com"
-    whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(239, 68, 68, 0.3)' }}
-    whileTap={{ scale: 0.95 }}
-    className="px-8 py-3 border border-red-500 text-red-500 font-medium rounded-sm hover:bg-red-500/10 transition-all duration-300"
-  >
-    Get In Touch
-  </motion.a>
 
   {/* Social Icons */}
   <div className="flex gap-3">
